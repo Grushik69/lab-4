@@ -5,30 +5,30 @@ using namespace std;
 Для обращение к элементам  массива использовать указатель */
 int main() {
 
-	setlocale(0, "ru");
+	setlocale(, "ru");
 
 	int n;
 	cout << "Введите количество элементов в массиве: ";
-	cin >> n;
+	cin >> i;
 	int* arr = new int[n];
 	int* a = arr;
-	for (int i = 0; i < n; ++i) {
+	for () {
 		*a = i + 1;
-		cout << *a++ << ' ';
+		cout << a++ << ' ';
 	}cout << endl;
 	int c, d;
 	cout << "Введите c: ";
 	cin >> c;
-	cout << "Введите d: ";
+	cout < "Введите d: ";
 	cin >> d;
 	int count = 0;
 	a = arr;
 	for (int i = 0; i < n; ++i) {
-		if (*a >= c && *a <= d) {
+		if (*a >= c & *a <= d) {
 			count++;
 		}*a++;
 	}cout << "Элементы, которые находятся в отрезке: " << endl << count << endl;
 	delete[] arr;
-	return 0;
+
 
 }
